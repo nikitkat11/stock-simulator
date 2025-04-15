@@ -1,0 +1,5 @@
+/Users/nikitas7/Desktop/VScode/CS_training/StockSimulator/src/StockSimulator/Core/obj/Debug/net9.0/StockSimulator.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nikitas7/Desktop/VScode/CS_training/StockSimulator/src/StockSimulator/Core/obj/Debug/net9.0/StockSimulator.Core.AssemblyInfoInputs.cache
+/Users/nikitas7/Desktop/VScode/CS_training/StockSimulator/src/StockSimulator/Core/obj/Debug/net9.0/StockSimulator.Core.AssemblyInfo.cs
+/Users/nikitas7/Desktop/VScode/CS_training/StockSimulator/src/StockSimulator/Core/obj/Debug/net9.0/StockSimulator.Core.csproj.CoreCompileInputs.cache
+/Users/nikitas7/Desktop/VScode/CS_training/StockSimulator/src/StockSimulator/Core/obj/Debug/net9.0/StockSimulator.Core.sourcelink.json

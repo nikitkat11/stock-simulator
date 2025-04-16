@@ -4,7 +4,10 @@ public class SimulationEngine
 {
     private readonly List<Stock> _stocks;
     private readonly Random _rng = new();
+<<<<<<< HEAD
     private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
+=======
+>>>>>>> 2cc3c76825d0b790eacad3bdb8c2c041fbd0ef35
 
     public IReadOnlyList<Stock> Stocks => _stocks.AsReadOnly();
 
@@ -34,35 +37,16 @@ public class SimulationEngine
     {
         while (!ct.IsCancellationRequested)
         {
-            // Update each stock's price
+            // 1. Update each stock's price
             _stocks.ForEach(s => s.UpdatePrice(_rng));
 
-            // Trigger "market events" occasionally
+            // 2. Trigger "market events" occasionally
             if (_rng.Next(0, 100) < 10) // 10% chance of a market event
             {
                 TriggerMarketEvent();
             }
 
-            await Task.Delay(2000, ct); // Update every 2 seconds
-        }
-    }
-
-    public void DisplayStocks()
-    {
-        Console.WriteLine("Stock Updates:");
-        Console.WriteLine("--------------------------------------------------");
-        foreach (var stock in _stocks)
-        {
-            Console.WriteLine($"Symbol: {stock.Symbol}, Price: {stock.Price:C}, Change: {stock.ChangePercent:F2}%");
-        }
-        Console.WriteLine("--------------------------------------------------");
-    }
-
-    public void AddStock(Stock stock)
-    {
-        if (!_stocks.Any(s => s.Symbol == stock.Symbol))
-        {
-            _stocks.Add(stock);
+            await Task.Delay(2000, ct);  // Update every 2 seconds
         }
     }
 

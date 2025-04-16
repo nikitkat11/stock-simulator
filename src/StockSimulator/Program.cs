@@ -1,4 +1,5 @@
 ﻿using StockSimulator.Core;
+<<<<<<< HEAD
 
 class Program
 {
@@ -183,3 +184,21 @@ class Program
         Console.WriteLine($"Your current balance is: {portfolio.Cash:C}");
     }
 }
+=======
+using StockSimulator.Data;
+using StockSimulator.UI;
+
+var filePath = "portfolio.json";
+var jsonRepository = new JsonRepository(filePath);
+
+// Load the portfolio
+var portfolio = jsonRepository.LoadPortfolio();
+var simulationEngine = new SimulationEngine();
+var consoleInterface = new ConsoleInterface(portfolio, simulationEngine);
+
+// Start the console interface
+await consoleInterface.StartAsync();
+
+// Save the portfolio on exit
+jsonRepository.SavePortfolio(portfolio);
+>>>>>>> 2cc3c76825d0b790eacad3bdb8c2c041fbd0ef35

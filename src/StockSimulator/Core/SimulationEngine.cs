@@ -10,8 +10,7 @@ public class SimulationEngine
 
     public SimulationEngine()
     {
-        // Initialize with sample stocks
-        // TODO: Load from config file/API
+    
 
         _stocks = new List<Stock>
         {

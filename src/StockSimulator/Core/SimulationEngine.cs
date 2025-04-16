@@ -4,10 +4,7 @@ public class SimulationEngine
 {
     private readonly List<Stock> _stocks;
     private readonly Random _rng = new();
-<<<<<<< HEAD
     private CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
-=======
->>>>>>> 2cc3c76825d0b790eacad3bdb8c2c041fbd0ef35
 
     public IReadOnlyList<Stock> Stocks => _stocks.AsReadOnly();
 

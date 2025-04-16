@@ -123,7 +123,14 @@ class Program
             var totalCost = stockToBuy.Price * quantity;
             if (portfolio.Cash >= totalCost)
             {
-                portfolio.BuyStock(symbol, stockToBuy.Price, quantity, simulationEngine);
+                if (!string.IsNullOrEmpty(symbol))
+                {
+                    portfolio.BuyStock(symbol, stockToBuy.Price, quantity, simulationEngine);
+                }
+                else
+                {
+                    Console.WriteLine("Invalid stock symbol.");
+                }
                 Console.WriteLine($"Successfully bought {quantity} shares of {symbol} for {totalCost:C}.");
             }
             else

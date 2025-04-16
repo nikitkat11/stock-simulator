@@ -67,4 +67,23 @@ public class SimulationEngine
                 break;
         }
     }
+
+    public void DisplayStocks()
+    {
+        Console.WriteLine("Stock Updates:");
+        Console.WriteLine("--------------------------------------------------");
+        foreach (var stock in _stocks)
+        {
+            Console.WriteLine($"Symbol: {stock.Symbol}, Price: {stock.Price:C}, Change: {stock.ChangePercent:F2}%");
+        }
+        Console.WriteLine("--------------------------------------------------");
+    }
+
+    public void AddStock(Stock stock)
+    {
+        if (!_stocks.Any(s => s.Symbol == stock.Symbol))
+        {
+            _stocks.Add(stock);
+        }
+    }
 }

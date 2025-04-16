@@ -1,5 +1,13 @@
 /Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/StockSimulator.GeneratedMSBuildEditorConfig.editorconfig
-/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/StockSimulator.AssemblyInfoInputs.cache
-/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/StockSimulator.AssemblyInfo.cs
 /Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/StockSimulator.csproj.CoreCompileInputs.cache
 /Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/StockSimulator.sourcelink.json
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/bin/Debug/net9.0/StockSimulator
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/bin/Debug/net9.0/StockSimulator.deps.json
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/bin/Debug/net9.0/StockSimulator.runtimeconfig.json
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/bin/Debug/net9.0/StockSimulator.dll
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/bin/Debug/net9.0/StockSimulator.pdb
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/StockSimulator.dll
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/refint/StockSimulator.dll
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/StockSimulator.pdb
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/StockSimulator.genruntimeconfig.cache
+/Users/nikitas7/Documents/GitHub/stock-simulator/src/StockSimulator/obj/Debug/net9.0/ref/StockSimulator.dll

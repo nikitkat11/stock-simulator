@@ -10,20 +10,23 @@ public class Portfolio
 
     public void BuyStock(string symbol, decimal price, int quantity, SimulationEngine simulationEngine)
     {
-        var stock = simulationEngine.Stocks.FirstOrDefault(s => s.Symbol == symbol);
-        if (stock == null)
+        if (symbol != null)
         {
-            stock = new Stock { Symbol = symbol, Price = price };
-            simulationEngine.AddStock(stock); // Add stock to SimulationEngine
+            var stock = simulationEngine.Stocks.FirstOrDefault(s => s.Symbol == symbol);
+            if (stock == null)
+            {
+                stock = new Stock { Symbol = symbol, Price = price };
+                simulationEngine.AddStock(stock); // Add stock to SimulationEngine
+            }
+            var portfolioStock = Stocks.FirstOrDefault(s => s.Symbol == symbol);
+            if (portfolioStock == null)
+            {
+                portfolioStock = stock;
+                Stocks.Add(portfolioStock);
+            }
+            portfolioStock.Quantity += quantity;
+            Cash -= price * quantity;
         }
-        var portfolioStock = Stocks.FirstOrDefault(s => s.Symbol == symbol);
-        if (portfolioStock == null)
-        {
-            portfolioStock = stock;
-            Stocks.Add(portfolioStock);
-        }
-        portfolioStock.Quantity += quantity;
-        Cash -= price * quantity;
     }
 
     public void SellStock(string symbol, int quantity)

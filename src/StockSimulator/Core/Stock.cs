@@ -5,6 +5,7 @@ public class Stock
     public required string Symbol { get; set; }  // e.g., "AAPL"
     public decimal Price { get; set; }
     public decimal ChangePercent { get; set; }
+    public int Quantity { get; set; }
 
     public void UpdatePrice(Random rng)
     {
@@ -13,7 +14,7 @@ public class Stock
         // 2. Update Price and ChangePercent
         // 3. (Advanced) Cap changes during "market hours"
         // Random price change (-5% to +5%)
-        decimal change = (decimal)(rng.NextDouble() * 0.1m - 0.05m);
+        decimal change = (decimal)(rng.NextDouble() * 0.1 - 0.05);
         Price *= 1 + change;
         ChangePercent = change * 100;
     }
